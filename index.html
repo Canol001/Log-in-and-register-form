@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row form-section">
+            <div class="col-lg-6 text-section">
+                <div class="p-5">
+                    <h1>Your Company name</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet urna eu nisl sagittis suscipit. Nulla facilisi. Curabitur vulputate dapibus dolor, non condimentum purus.</p>
+                    <h3>Services</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet urna eu nisl sagittis suscipit. Nulla facilisi. Curabitur vulputate dapibus dolor, non condimentum purus.</p>
+                    <h5>About us</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet urna eu nisl sagittis suscipit. Nulla facilisi. Curabitur vulputate dapibus dolor, non condimentum purus.</p>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="container mt-5">
+                    <div class="form-container" id="form-container">
+                        <!-- Login Form -->
+                        <div class="form-content login-form">
+                            <h2>Login</h2>
+                            <form action="#" method="post">
+                                <div class="form-group">
+                                    <label for="login-email">Email:</label>
+                                    <input type="email" class="form-control" id="login-email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="login-password">Password:</label>
+                                    <input type="password" class="form-control" id="login-password" name="password" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                            </form>
+                            <p class="flip-button"><a href="#" id="show-register">Don't have an account? Register here</a></p>
+                        </div>
+                        <!-- Register Form -->
+                        <div class="form-content register-form">
+                            <h2>Register</h2>
+                            <form action="#" method="post">
+                                <div class="form-group">
+                                    <label for="register-name">Name:</label>
+                                    <input type="text" class="form-control" id="register-name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="register-email">Email:</label>
+                                    <input type="email" class="form-control" id="register-email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="register-age">Age:</label>
+                                    <input type="number" class="form-control" id="register-age" name="age" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="register-gender">Gender:</label>
+                                    <select class="form-control" id="register-gender" name="gender" required>
+                                        <option value="">Select Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="register-county">County:</label>
+                                    <select class="form-control" id="register-county" name="county" required>
+                                        <option value="">Select County</option>
+                                        <option value="county1">County 1</option>
+                                        <option value="county2">County 2</option>
+                                        <option value="county3">County 3</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="register-course">Course:</label>
+                                    <select class="form-control" id="register-course" name="course" required>
+                                        <option value="">Select Course</option>
+                                        <option value="course1">Course 1</option>
+                                        <option value="course2">Course 2</option>
+                                        <option value="course3">Course 3</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Register</button>
+                            </form>
+                            <p class="flip-button"><a href="#" id="show-login">Already have an account? Login here</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

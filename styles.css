@@ -1,0 +1,66 @@
+
+        body {
+            background-color: #3afefe;
+        }
+        .form-section {
+            display: flex;
+            align-items: flex-start; /* Align items to the start */
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .text-section {
+            display: none;
+        }
+        @media (min-width: 992px) {
+            .text-section {
+                display: block;
+            }
+        }
+        .container {
+            perspective: 800px;
+            max-width: 500px;
+            margin-top: 230px; /* Move the container up by 150px */
+        }
+        .form-container {
+            position: relative;
+            width: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.8s;
+        }
+        .form-content {
+            position: absolute;
+            width: 100%;
+            backface-visibility: hidden;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-form {
+            transform: rotateY(0deg);
+        }
+        .register-form {
+            transform: rotateY(180deg);
+        }
+        .form-content h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #343a40;
+        }
+        .form-content .form-control {
+            border-radius: 0.25rem;
+        }
+        .form-content .form-group label {
+            font-weight: bold;
+            color: #495057;
+        }
+        .btn-primary, .btn-secondary {
+            border-radius: 0.25rem;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+        }
+        .flip-button {
+            margin-top: 1rem;
+            display: block;
+            text-align: center;
+        }
